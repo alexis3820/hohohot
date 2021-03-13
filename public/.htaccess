@@ -11,4 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 #directory
 RewriteCond %{REQUEST_FILENAME} !-d
 #rule
-RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ ?p=$1
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.php?p=$1
