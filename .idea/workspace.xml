@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/GroupsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Document.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/GroupsModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/groups/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/groups/show.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/wbbtheme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery.wysibb.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/ws.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/wysi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_list.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
