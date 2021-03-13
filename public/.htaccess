@@ -1,0 +1,11 @@
+<IfModule !mod_rewrite.c>
+	ErrorDocument 500 "rewrite mod need to be install"
+</IfModule>
+#start rewrite engine
+RewriteEngine On
+#file
+RewriteCond %{REQUEST_FILENAME} !-f
+#directory
+RewriteCond %{REQUEST_FILENAME} !-d
+#rule
+RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ ?p=$1
