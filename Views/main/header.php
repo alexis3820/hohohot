@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <title>Hohohot</title>
-    <link rel="stylesheet" href="../../static/css/wbbtheme.css">
-    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="/static/css/wbbtheme.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../static/js/ws.js"></script>
-    <script src="../../static/js/jquery.wysibb.min.js"></script>
-    <script src="../../static/js/wysi.js"></script>
+    <script src="/static/js/ws.js"></script>
+    <script src="/static/js/jquery.wysibb.min.js"></script>
+    <script src="/static/js/wysi.js"></script>
 </head>
 <body>
 <?php

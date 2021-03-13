@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Document.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/wbbtheme.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/wbbtheme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/jquery.wysibb.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/jquery.wysibb.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/ws.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/ws.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/js/wysi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/wysi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +101,7 @@
       <workItem from="1615569635773" duration="20332000" />
       <workItem from="1615590631009" duration="7283000" />
       <workItem from="1615629335630" duration="22176000" />
-      <workItem from="1615658885301" duration="1262000" />
+      <workItem from="1615658885301" duration="1692000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1610010410419</created>
