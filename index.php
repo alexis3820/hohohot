@@ -7,7 +7,7 @@ use App\Core\Main;
 define('ROOT', dirname(__DIR__));
 
 //import autoloader
-require_once ROOT . '/Autoloader.php';
+require_once 'Autoloader.php';
 Autoloader::register();
 
 //Main = rooter
