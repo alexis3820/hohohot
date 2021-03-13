@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/GroupsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Db.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/DB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Document.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/GroupsModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/groups/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/groups/show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/wbbtheme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/jquery.wysibb.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/ws.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/wysi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/student_list.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hohohot_Dynamique" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -55,11 +74,11 @@
       <recent name="C:\Serveurs\wamp64\www\MyRealMVC\Views\capteur" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\alexi\Documents\Applications\hohohot" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\js" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\documentation" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\Controllers" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\public" />
+      <recent name="C:\Serveurs\wamp64\www\hohohot" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -93,7 +112,6 @@
       <workItem from="1615569635773" duration="20332000" />
       <workItem from="1615590631009" duration="7283000" />
       <workItem from="1615629335630" duration="22176000" />
-      <workItem from="1615658885301" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1610010410419</created>
