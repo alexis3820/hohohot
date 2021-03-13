@@ -1,6 +1,9 @@
 <IfModule !mod_rewrite.c>
 	ErrorDocument 500 "rewrite mod need to be install"
 </IfModule>
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
 #start rewrite engine
 RewriteEngine On
 #file
