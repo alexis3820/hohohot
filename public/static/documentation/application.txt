@@ -1,0 +1,75 @@
+[b][u]Fonctionnement de l'application[/u][/b]
+
+HotHotHot à pour rôle d’être une interface d’information et de gestion d’un système domotique.
+Elle reçoit des données en provenance de différents capteurs que ce soit des capteurs intérieur ou extérieur puis affiche ces données, leur historique si nécessaire et propose des suggestions, émet des alertes.
+
+
+[b]Créer son compte[/b]
+
+Dans la barre de menu, cliquer sur l'onglet "S’enregistrer" 
+Vous devrez renseigner les informations suivantes :
+- Un nom
+- Un prénom
+- Un email
+- Un mot de passe
+- Une confirmation de mot de passe
+
+Une fois votre compte enregistré vous serez redirigé sur la page de connexion.
+
+
+[b]Se connecter[/b]
+
+Dans la barre de menu, cliquer sur l'onglet "Se connecter" 
+Vous devrez renseigner les informations suivantes :
+- Un email
+- Un mot de passe
+
+Une fois connecté vous serez redirigé sur la page d’accueil.
+
+
+[b]Accès à vos informations du compte[/b]
+
+Dans la barre de menu, cliquer sur l'onglet "Profil" (il faut être au préalable connecté) 
+Vous pourrez ainsi voir :
+-Votre nom et prénom renseigné à l’inscription
+-Votre identifiant (qui représente votre adresse mail)
+
+Vous aurez la possibilité de changer votre mot de passe (cf Modification du mot de passe).
+
+[b]Modification du mot de passe[/b]
+
+Dans la page du Profil, il est possible de changer votre mot de passe dans le formulaire prévu à cet effet.
+Ce formulaire vous demandera d’insérer votre email (votre identifiant) où un mail y sera envoyé.
+Une fois ce mail reçu vous n’aurez qu’à suivre les instructions.
+En suivant le lien dans ce mail, il vous sera demandé d’entrer le token qui vous a été envoyé
+[i]/!\ Le token expirera 10 minutes après l’envoi du mail[/i]
+(si le token à expirer il faudra recommencer la manipulation depuis le début).
+Une fois le token confirmé, vous pourrez entrer votre nouveau mot de passe.
+
+[b]Températures[/b]
+
+Pour voir les températures, vous avez le choix entre, l’historique prévu à la page d’accueil ou les températures affichées en temps réel dans l’onglet “Températures” de votre menu.
+Dans l’onglet “Températures”, une fois sur la page, vous pourrez regarder les températures affichées en temps réel.
+[i]/!\ La connexion au serveur hothothot.dog peu prendre jusqu’à 2 minutes environ[/i]
+Vous pourrez également afficher les alertes des températures en cliquant sur l'icône alerte (bouton rouge)
+
+[b]Documentations[/b]
+
+La documentation se trouve dans le menu “Documentation”.
+En tant qu’invité vous pourrez seulement la lire.
+En tant que membre (connecté) vous pourrez modifier, supprimer, ajouter et lire la documentation.
+   ﻿   
+   [b]﻿Création d’un document[/b]
+   ﻿Dans la page documentation, cliquez sur “créer un nouveau document”.
+   ﻿Une fois cela fait, choisissez un nom à votre document en lui rajoutant l’extension ‘.txt’ ou ‘.odt’.
+   ﻿Complétez votre document puis validez le en cliquant sur “Créer” en bas de l’éditeur.
+
+   ﻿[b]Modification d’un document[/b]
+   ﻿Dans la page documentation, sélectionnez le document que vous souhaitez modifier (en haut de page) puis cliquez sur choisir.
+   ﻿Une fois validé, vous pourrez modifier son contenu.
+   ﻿Lorsque vous aurez fini vos modifications cliquez sur “Modifier” en bas de l’éditeur.
+
+   ﻿[b]Suppression d’un document[/b]
+   ﻿Dans la page documentation, sélectionnez le document que vous souhaitez supprimer (en haut de page) puis cliquez sur choisir.
+   ﻿Une fois validé, en base de l’éditeur, cliquez sur “Supprimer ce document”.
+   ﻿[i]/!\ Cette manipulation est irréversible ![/i]

@@ -1,0 +1,53 @@
+[b][u]Framework[/u][/b]
+
+[b]Arborescence[/b]
+
+Notre framework respecte le modèle MVC (Modèle - Vue - Contrôleur), et suis l’arborescence suivante :
+
+Projet   ﻿->   controllers
+      ->   core   ﻿->   ﻿static
+      ->   models
+      ->   views      
+
+[b]Projet[/b]
+Répertoire racine du framework contenant l’ensemble des répertoires.
+
+
+[b]Controllers[/b]
+Contient l’ensemble des fichiers désignés comme contrôleur de l’application.
+Respecte le nommage suivant “XxxController.php”.
+   [b]MainController.php[/b]
+[i]   ﻿Projet -> controller -> MainController.php[/i]
+   ﻿Est le controller sélectionné par défaut par l’application si aucun n’est sélectionné.
+
+
+[b]   ﻿AutoLoader.php[/b]
+[i]   ﻿Projet -> AutoLoader.php[/i]
+   ﻿S’occupe de l'auto-chargement de l’ensemble des fichiers PHP contenu dans les répertoires (ne comprend pas les sous-répertoires) suivant :
+   ﻿controller - core - model - view
+
+
+[b]   ﻿Controller.php[/b]
+[i]   ﻿Projet -> controller -> Controller.php[/i]
+   ﻿Est le controller parent des autres controllers
+
+[b]Core[/b]
+Contient le routeur et la création/connexion de la base de données.
+La connexion à la base de donnée est basé sur le design pattern singleton.
+
+[b]Public[/b]
+Contient le fichier htaccess pour la réécriture d’url.
+Contient le point d’entrée de l’application “index.php”.
+Contient également les fichiers statiques et notamment le répertoire où est stockée toute la documentation de [b]Hothothot[/b].
+
+[b]Models[/b]
+Contient l’ensemble des fichiers désignés comme classe de l’application.
+Respecte le nommage suivant “Xxx.php”.
+
+
+[b]Views[/b]
+Contient le répertoire “main”.
+Contient l’ensemble de fichier désigné comme vue de l’application.
+Respecte le nommage suivant “XxxView.php”.
+[b]   ﻿main[/b]
+   ﻿Contient les fichiers de vue servant de patron (Header - Body - Footer...) afin de construire la base de toutes les pages HTML.
