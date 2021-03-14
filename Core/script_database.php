@@ -19,15 +19,6 @@ $_SQL_table_degree = "CREATE TABLE degree(
                     primary key (id)
 )";
 
-//Create doc
-$_SQL_table_doc = "CREATE TABLE documentation(
-        id int auto_increment,
-        doc_framework text null,
-        doc_job text null,
-        constraint documentation_pk
-            primary key (id)
-)";
-
 // Create user
 $_SQL_table_user = "create table user(
         id int auto_increment,
@@ -94,21 +85,6 @@ if($successfull){
         // use exec() because np results are returned
         $db->exec($_SQL_table_degree);
         echo "Table degree created successfully <br>";
-
-    } catch (PDOException $e){
-        echo $e->getMessage() . "<br>";
-    }
-
-    // Create documentation
-    try {
-        // set the PDO error mode to exception
-        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-        // Sql to create table documentation
-        // $_SQL_table_doc
-        // use exec() because np results are returned
-        $db->exec($_SQL_table_doc);
-        echo "Table documentation created successfully <br>";
 
     } catch (PDOException $e){
         echo $e->getMessage() . "<br>";
