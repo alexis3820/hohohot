@@ -18,7 +18,7 @@ footer {
     right: 0;
     height: 60px;
     background: #d3e4f2;
-    color: white;
+    color: gray !important;
 }
 
 #register{

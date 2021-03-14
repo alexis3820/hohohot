@@ -27,7 +27,7 @@ include(ROOT . '/Views/main/header.php'); ?>
         </div>
         <?php } ?>
     <?php foreach ($contentDocuments as $key=>$contentDocument){ ?>
-        <section>
+        <section class="mb-5">
             <h2><?php echo $key ?></h2>
             <?php echo $contentDocument?>
         </section>

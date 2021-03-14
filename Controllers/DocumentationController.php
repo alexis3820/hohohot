@@ -12,7 +12,7 @@ class DocumentationController extends Controller
         $listDocuments = $document->getListDocuments();
         $contentDocuments = [];
         foreach ($listDocuments as $doc){
-            $contentDocuments[$doc] = $document->getContentDocument($doc);
+            $contentDocuments[$doc] = $document->getConvertedContentDocument($doc);
         }
         $this->render('document/index',['documents'=>$listDocuments,'contentDocuments'=>$contentDocuments]);
     }
@@ -20,7 +20,7 @@ class DocumentationController extends Controller
     public function editSelectDocument(){
         if(isset($_POST['selected_doc'])){
             $document = new Document();
-            $documentContent = $document->getContentDocument($_POST['selected_doc']);
+            $documentContent = $document->getNoConvertedContentDocument($_POST['selected_doc']);
             $this->render('document/edit',['selectedDocument'=>$_POST['selected_doc'],'documentContent'=>$documentContent]);
         }else{
             $this->render('document/error');
@@ -35,8 +35,8 @@ class DocumentationController extends Controller
             $document = new Document();
             $listDocuments = $document->getListDocuments();
             if(in_array($_POST['selected_doc'],$listDocuments)){
-                if($document->saveChange($_POST['selected_doc'])){
-                    $updatedDocument = $document->getContentDocument($_POST['selected_doc']);
+                if($document->saveChange(htmlspecialchars($_POST['selected_doc']))){
+                    $updatedDocument = $document->getNoConvertedContentDocument($_POST['selected_doc']);
                     $message = '(Le document '.$_POST['selected_doc'].' à bien été sauvegardé)';
                     $this->render('document/result',['status'=>$message,'updatedDocument'=>$updatedDocument,'nameDocument'=>$_POST['selected_doc']]);
                 }
@@ -65,7 +65,7 @@ class DocumentationController extends Controller
         (Peut-être, veuillez changer l\'extension en ".txt" ou ".odt" par exemple et/ou le nom de votre document)';
         if(isset($_POST['new_doc_name'],$_POST['new_doc'])){
             $document = new Document();
-            if($document->createDocument($_POST['new_doc_name'],$_POST['new_doc'])){
+            if($document->createDocument($_POST['new_doc_name'],htmlspecialchars($_POST['new_doc']))){
                 $message = 'Le document '.$_POST['new_doc_name'].' à bien été créé !';
             }
         }else{

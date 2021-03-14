@@ -1,7 +1,10 @@
 <?php
-
-
 namespace App\Models;
+
+require_once '../public/static/library/jbbcode-1.3.0/JBBCode/Parser.php';
+
+use JBBCode\DefaultCodeDefinitionSet;
+use JBBCode\Parser;
 
 class Document
 {
@@ -31,8 +34,17 @@ class Document
         return $finalNameFile;
     }
 
-    public function getContentDocument($document){
-        return file_get_contents($this->directory.$document);
+    public function getConvertedContentDocument($document){
+        $content = htmlspecialchars((file_get_contents($this->directory.$document)));
+        $parser = new Parser();
+        $parser->addCodeDefinitionSet(new DefaultCodeDefinitionSet());
+        $parser->parse($content);
+
+        return $parser->getAsHTML();
+    }
+
+    public function getNoConvertedContentDocument($document){
+        return htmlspecialchars((file_get_contents($this->directory.$document)));
     }
 
     public function saveChange($document){
