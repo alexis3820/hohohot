@@ -1,7 +1,95 @@
 body{
     background: linear-gradient(#b3d5f2, #4a9be0, #4a9be0, #b3d5f2) !important;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative !important;
 }
 
 header{
-    background: #d3e4f2 !important;
+    background: #ffffe3 !important;
+    box-shadow: 0 0 1em #fcfbd4;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #d3e4f2;
+    color: white;
+}
+
+#register{
+    color: #d6ecff !important;
+    text-decoration: none !important;
+}
+
+#register:hover{
+    color: #b3d5f2 !important;
+}
+
+input[type=submit] {
+    background-color: #167bde;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size:16px;
+    line-height: 1.4;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+input[type=submit]:hover {
+    background-color: #115fab;
+    line-height: 1.4;
+    padding: 5px;
+}
+
+#informationTemperature{
+    font-style: italic;
+}
+
+#alertButton{
+    border: none;
+    background: none;
+    color: #d9534f;
+    font-size: 30px;
+}
+
+#alertButton:hover{
+    color: #d66865;
+}
+
+#cardExt,#cardInt{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    box-shadow: 12px 12px 2px 1px rgba(149, 197, 237, 0.2);
+}
+
+#cardExt:hover,#cardInt:hover{
+    transition-duration: 0.3s;
+    box-shadow: 1px 1px 2px 1px rgba(149, 197, 237, 0.2);
+}
+
+#tempExt,#tempInt{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#alertInt,#alertExt{
+    font-weight: lighter !important;
+}
+
+#editDocBar{
+    background-color: #d3e4f2;
+    border-radius: 3px;
+}
+
+#editor{
+    height: 300px;
 }

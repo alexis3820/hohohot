@@ -4,39 +4,41 @@ use App\Models\User;
 
 include(ROOT.'/Views/main/header.php');
 
-if (!User::isConnected()) {
-?>
-<form action="/user/register" method="post">
-    <div>
-        <label for="first-name">Nom :</label>
-        <input type="text" id="first-name" name="first_name">
-    </div>
-    <div>
-        <label for="last-name">Prénom :</label>
-        <input type="text" id="last-name" name="last_name">
-    </div>
-    <div>
-        <label for="email">Mail :</label>
-        <input type="email" id="email" name="email">
-    </div>
-    <div>
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password">
-    </div>
-    <div>
-        <label for="password-confirmation">Confirmer mot de passe :</label>
-        <input type="password" id="password-confirmation" name="password_confirmation">
-    </div>
-    <div>
-        <input type="submit" name="submitRegister" value="Register">
-    </div>
-</form>
-    <?php if(isset($message)){ ?>
-        <p><?php echo $message; ?></p>
-<?php }
-}else{
+if (!User::isConnected()) { ?>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="mt-5 mb-5">
+                    <h1 class="text-center">Création du compte</h1>
+                </div>
+                <form action="/user/register" method="post">
+                    <div class="mb-3">
+                        <input class="form-control" type="text" id="first-name" name="first_name" placeholder="Nom :" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="text" id="last-name" name="last_name" placeholder="Prénom :" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Mail :" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Mot de passe :" required>
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control" type="password" id="password-confirmation" name="password_confirmation" placeholder="Confirmer mot de passe :" required>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <input class="col-3" type="submit" name="submitRegister" value="Register">
+                    </div>
+                </form>
+                <div class="row justify-content-center">
+                    <?php if(isset($message)){ ?>
+                        <p><?php echo $message; ?></p>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+<?php }else{
     header('Location: /');
 }
 
-include(ROOT.'/Views/main/footer.php');
-?>
+include(ROOT.'/Views/main/footer.php'); ?>

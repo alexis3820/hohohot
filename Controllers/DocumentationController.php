@@ -37,13 +37,15 @@ class DocumentationController extends Controller
             if(in_array($_POST['selected_doc'],$listDocuments)){
                 if($document->saveChange($_POST['selected_doc'])){
                     $updatedDocument = $document->getContentDocument($_POST['selected_doc']);
-                    $message = 'Le document '.$_POST['selected_doc'].' à bien été sauvegardé !';
+                    $message = '(Le document '.$_POST['selected_doc'].' à bien été sauvegardé)';
+                    $this->render('document/result',['status'=>$message,'updatedDocument'=>$updatedDocument,'nameDocument'=>$_POST['selected_doc']]);
                 }
             }
 
+        }else{
+            $this->render('document/result');
         }
 
-        $this->render('document/result',['status'=>$message,'updatedDocument'=>$updatedDocument,'nameDocument'=>$_POST['selected_doc']]);
     }
 
     public function deleteDocument(){
