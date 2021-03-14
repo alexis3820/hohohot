@@ -103,6 +103,17 @@ class User
         return false;
     }
 
+    public function updatePassword($email, $password){
+        $_SQL_updatedata = "UPDATE user SET password=:password WHERE email=:mail";
+        $this->connexionDb = DB::getInstance();
+        $query = $this->connexionDb->prepare($_SQL_updatedata);
+        if($query->execute(array(":password"=>$password,":mail"=>$email))){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
     //token
     public function mailRecuperationExist($mail){

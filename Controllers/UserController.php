@@ -79,6 +79,7 @@ class UserController extends Controller
         if (isset($_SESSION['id'])) {
             $user = new User();
             $actualUserInformations = $user->getUser($_SESSION['id']);
+            $message = '';
             if (isset($_POST['submit_recup'], $_POST['mail_recup'])) {
                 if(!empty($_POST['mail_recup'])){
                     $mail = htmlspecialchars($_POST['mail_recup']);
@@ -101,27 +102,27 @@ class UserController extends Controller
 
                                 $email = new Mail($mail,$recup_code,$actualUserInformations['lastname'].' '.$actualUserInformations['firstname']);
                                 $email->send();
-                                echo 'Un lien a bien été envoyé à l\'adresse mail renseignée';
+                                $message = 'Un lien a bien été envoyé à l\'adresse mail renseignée';
                             }else{
-                                echo 'Veuillez renseigner une adresse email valide';
+                                $message = 'Veuillez renseigner une adresse email valide';
                             }
 
                         }else{
-                            echo 'L\'adresse mail que vous venez de renseigner ne correspond pas à celle de votre compte ... Veuillez réessayer !';
+                            $message = 'L\'adresse mail que vous venez de renseigner ne correspond pas à celle de votre compte ... Veuillez réessayer !';
                         }
 
                     } else {
-                        echo 'Veuillez renseigner une adresse email valide';
+                        $message = 'Veuillez renseigner une adresse email valide';
                     }
 
                 }else{
-                    echo 'Veuillez renseigner une adresse email';
+                    $message = 'Veuillez renseigner une adresse email';
                 }
 
             }
 
             session_write_close();
-            $this->render('user/profil', ['informations'=>$actualUserInformations]);
+            $this->render('user/profil', ['informations'=>$actualUserInformations,'message'=>$message]);
         } else {
             session_write_close();
             $this->render('user/login');
@@ -134,39 +135,64 @@ class UserController extends Controller
         session_start();
         if(!isset($_SESSION['id'])){
             session_write_close();
-//            header('Location : /');
             $this->render('user/login');
         }
 
-        $this->render('user/verifyToken');
         if(isset($_POST['submitToken'])){
+            $message = '';
+            $isValidate = false;
             if(!empty($_POST['token'])){
                 $user = new User();
                 $token = $user->isValidToken($_SESSION['id'],$_POST['token']);
                 if(false !== $token){
                     if($token['code'] === $_POST['token']){
-                        session_write_close();
-                        header('Location : /');
-                        $this->render('user/changePassword');
+                        $isValidate = true;
                     }else{
-                        echo 'Token expiré';
+                        $message = 'Token non valide';
                     }
 
                 }else{
-                    echo 'Token expiré';
+                    $message = 'Token expiré';
                 }
 
             }else{
-                echo 'Veuillez insérer le code qui vous a été envoyé';
+                $message = 'Veuillez insérer le code qui vous a été envoyé';
             }
 
+            $this->render('user/verifyToken',['message'=>$message,'isValidate'=>$isValidate]);
+
+        }else{
+            $this->render('user/verifyToken');
         }
 
     }
 
     public function changePassword()
     {
-        echo 'boobs';
+        session_start();
+        if(isset($_SESSION['id'])){
+            $user = new User();
+            $actualUserInformations = $user->getUser($_SESSION['id']);
+            $message = 'Il y a eu un problème dans le changement de votre mot de passe, réessayez plutard.';
+            if(isset($_POST['submitChange'])){
+                if($_POST['new_password'] === $_POST['new_password_confirmation']){
+                    if($user->updatePassword($_SESSION['id'],password_hash($_POST['new_password'], PASSWORD_DEFAULT))){
+                        $message = 'Votre mot de passe à bien été modifié !';
+                    }
+                }else{
+                    $message = 'Les mots de passe doivent se correspondre !';
+                    $this->render('user/verifyToken',['message'=>$message,'isValidate'=>true]);
+                    die;
+                }
+            }
+
+            session_write_close();
+            $this->render('user/profil',['informations'=>$actualUserInformations,'message'=>$message]);
+        }else{
+            session_write_close();
+            $this->render('user/login');
+        }
+
 
     }
 }

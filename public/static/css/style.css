@@ -93,3 +93,8 @@ input[type=submit]:hover {
 #editor{
     height: 300px;
 }
+
+#profilCard{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+}
