@@ -3,7 +3,7 @@
 use App\Models\User;
 
 include(ROOT . '/Views/main/header.php'); ?>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-5">
         <div class="col-8">
             <?php if (User::isConnected() && isset($selectedDocument)) { ?>
                 <div class="mt-5 mb-5 text-center">

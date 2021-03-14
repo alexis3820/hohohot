@@ -38,7 +38,7 @@ class Document
         $content = htmlspecialchars((file_get_contents($this->directory.$document)));
         $parser = new Parser();
         $parser->addCodeDefinitionSet(new DefaultCodeDefinitionSet());
-        $parser->parse($content);
+        $parser->parse(nl2br($content));
 
         return $parser->getAsHTML();
     }

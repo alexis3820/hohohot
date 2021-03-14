@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/CapteurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/CapteurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/DocumentationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/DocumentationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/Document.php" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Document.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/document/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/document/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/document/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/document/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/document/result.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/document/result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +99,7 @@
       <workItem from="1615569635773" duration="20332000" />
       <workItem from="1615590631009" duration="7283000" />
       <workItem from="1615629335630" duration="22176000" />
-      <workItem from="1615715446685" duration="31838000" />
+      <workItem from="1615715446685" duration="36839000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1610010410419</created>

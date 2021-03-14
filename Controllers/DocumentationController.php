@@ -17,13 +17,25 @@ class DocumentationController extends Controller
         $this->render('document/index',['documents'=>$listDocuments,'contentDocuments'=>$contentDocuments]);
     }
 
+    public function showSelectDocument(){
+        $document = new Document();
+        $listDocuments = $document->getListDocuments();
+        if(isset($_POST['select_show_doc'])){
+            $content[$_POST['selected_show_doc']] = $document->getConvertedContentDocument($_POST['selected_show_doc']);
+            $this->render('document/index',['documents'=>$listDocuments,'content'=>$content]);
+        }else{
+            $this->render('document/index',['documents'=>$listDocuments]);
+        }
+
+    }
+
     public function editSelectDocument(){
         if(isset($_POST['selected_doc'])){
             $document = new Document();
             $documentContent = $document->getNoConvertedContentDocument($_POST['selected_doc']);
             $this->render('document/edit',['selectedDocument'=>$_POST['selected_doc'],'documentContent'=>$documentContent]);
         }else{
-            $this->render('document/error');
+            $this->render('document/index');
         }
 
     }
@@ -35,8 +47,8 @@ class DocumentationController extends Controller
             $document = new Document();
             $listDocuments = $document->getListDocuments();
             if(in_array($_POST['selected_doc'],$listDocuments)){
-                if($document->saveChange(htmlspecialchars($_POST['selected_doc']))){
-                    $updatedDocument = $document->getNoConvertedContentDocument($_POST['selected_doc']);
+                if($document->saveChange($_POST['selected_doc'])){
+                    $updatedDocument = $document->getConvertedContentDocument($_POST['selected_doc']);
                     $message = '(Le document '.$_POST['selected_doc'].' à bien été sauvegardé)';
                     $this->render('document/result',['status'=>$message,'updatedDocument'=>$updatedDocument,'nameDocument'=>$_POST['selected_doc']]);
                 }

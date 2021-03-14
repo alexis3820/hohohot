@@ -36,7 +36,7 @@ Vous pourrez ainsi voir :
 
 Vous aurez la possibilité de changer votre mot de passe (cf Modification du mot de passe).
 
-[b]Modification du mot de passe[/b]
+[b][u]Modification du mot de passe[/u][/b]
 
 Dans la page du Profil, il est possible de changer votre mot de passe dans le formulaire prévu à cet effet.
 Ce formulaire vous demandera d’insérer votre email (votre identifiant) où un mail y sera envoyé.

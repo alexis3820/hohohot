@@ -90,6 +90,13 @@ input[type=submit]:hover {
     border-radius: 3px;
 }
 
+#doc{
+    background-color: white !important;
+    border-radius: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #editor{
     height: 300px;
 }
