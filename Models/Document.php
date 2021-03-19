@@ -13,7 +13,7 @@ class Document
         'odt',
     ];
 
-    private $directory = '../public/static/documentation/';
+    private $directory = ROOT.'/public/static/documentation/';
 
     public function getListDocuments(){
         $files = scandir($this->directory);
