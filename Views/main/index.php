@@ -17,13 +17,17 @@
 
             // The data for our dataset
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                labels: [<?php foreach($temperatures as $temperature){
+                    echo $temperature['date'].',';
+                } ?>],
                 datasets: [{
                     label: 'Températures Extérieur',
                     backgroundColor: 'rgba(255, 255, 227,0.3)',
                     borderColor: 'rgb(255, 255, 227)',
-                    data: [0, 10, 5, 2, 20, 30, 33]
-                    //data: [<?php //foreach ($temperatures as $temperature){echo $temperature['value_ext'];} ?>//]
+                    // data: [0, 10, 5, 2, 20, 30, 33]
+                    data: [<?php foreach($temperatures as $temperature){
+                        echo $temperature['value_ext'].',';
+                    } ?>]
                 }]
             },
 

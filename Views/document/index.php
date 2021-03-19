@@ -2,7 +2,9 @@
 
 use App\Models\User;
 
-include(ROOT . '/Views/main/header.php'); ?>
+include(ROOT . '/Views/main/header.php');
+
+?>
     <div class="row">
         <div class="text-center mt-5">
             <h1>Documentation Hohohot</h1>

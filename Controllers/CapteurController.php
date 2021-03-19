@@ -1,10 +1,7 @@
 <?php
-
-
 namespace App\Controllers;
 
-
-use App\Models\temperature;
+use App\Models\Temperature;
 
 class CapteurController extends Controller
 {

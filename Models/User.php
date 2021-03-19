@@ -2,7 +2,8 @@
 
 
 namespace App\Models;
-require '../Core/DB.php';
+//require '../Core/DB.php';
+require_once '../Core/DB.php';
 use DB,PDO;
 
 class User

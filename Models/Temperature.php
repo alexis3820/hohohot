@@ -2,7 +2,7 @@
 namespace App\Models;
 require '../Core/DB.php';
 use DB;
-class Temperature extends DB
+class Temperature
 {
     public function insert($temperatures){
         $dataToInsert = $this->format($temperatures);
@@ -18,11 +18,19 @@ class Temperature extends DB
     }
 
     public function getLastTemperature(){
-        $_SQL_getdata = "SELECT * FROM degree WHERE date = (SELECT MAX(date) FROM degree);";
+        $_SQL_getdata = "SELECT * FROM degree LIMIT 20;";
         $this->connexionDb = DB::getInstance();
         $query = $this->connexionDb->prepare($_SQL_getdata);
         $query->execute();
-        return $query->fetch();
+        $temperatures = $query->fetchAll();
+        $finalData = [];
+        foreach ($temperatures as $temperature){
+            $date = new \DateTime($temperature['date']);
+            $temperature['date'] = $date->format('Y_m_d_H_i_s');
+            $finalData[] = $temperature;
+        }
+
+        return $finalData;
     }
 
     public function format($temperatures){
