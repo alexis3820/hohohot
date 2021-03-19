@@ -18,7 +18,7 @@
             // The data for our dataset
             data: {
                 labels: [<?php foreach($temperatures as $temperature){
-                    echo $temperature['date'].',';
+                    echo '\''.$temperature['date'].'\''.',';
                 } ?>],
                 datasets: [{
                     label: 'Températures Extérieur',
@@ -26,7 +26,7 @@
                     borderColor: 'rgb(255, 255, 227)',
                     // data: [0, 10, 5, 2, 20, 30, 33]
                     data: [<?php foreach($temperatures as $temperature){
-                        echo $temperature['value_ext'].',';
+                        echo $temperature['value_ext'].",";
                     } ?>]
                 }]
             },

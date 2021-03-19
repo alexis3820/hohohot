@@ -26,19 +26,11 @@ class Temperature
     }
 
     public function getLastTemperatures(){
-        $_SQL_getdata = "SELECT * FROM degree LIMIT 20;";
+        $_SQL_getdata = "SELECT * FROM degree ORDER BY date DESC LIMIT 20;";
         $this->connexionDb = DB::getInstance();
         $query = $this->connexionDb->prepare($_SQL_getdata);
         $query->execute();
-        $temperatures = $query->fetchAll();
-        $finalData = [];
-        foreach ($temperatures as $temperature){
-            $date = new \DateTime($temperature['date']);
-            $temperature['date'] = $date->format('Y_m_d_H_i_s');
-            $finalData[] = $temperature;
-        }
-
-        return $finalData;
+        return $query->fetchAll();
     }
 
     public function format($temperatures){
