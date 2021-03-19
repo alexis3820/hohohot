@@ -6,7 +6,7 @@ use App\Models\Temperature;
 class MainController extends Controller{
     public function index(){
         $temperature = new Temperature();
-        $temperatures = $temperature->getLastTemperature();
+        $temperatures = $temperature->getLastTemperatures();
         $this->render('main/index', ['temperatures'=>$temperatures]);
 //        $this->render('main/index', []);
     }

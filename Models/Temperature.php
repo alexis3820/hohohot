@@ -18,6 +18,14 @@ class Temperature
     }
 
     public function getLastTemperature(){
+        $_SQL_getdata = "SELECT * FROM degree WHERE date = (SELECT MAX(date) FROM degree);";
+        $this->connexionDb = DB::getInstance();
+        $query = $this->connexionDb->prepare($_SQL_getdata);
+        $query->execute();
+        return $query->fetch();
+    }
+
+    public function getLastTemperatures(){
         $_SQL_getdata = "SELECT * FROM degree LIMIT 20;";
         $this->connexionDb = DB::getInstance();
         $query = $this->connexionDb->prepare($_SQL_getdata);
