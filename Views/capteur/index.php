@@ -1,7 +1,7 @@
 <?php include(ROOT . '/Views/main/header.php'); ?>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mb-5">
         <div class="col-8">
-            <div class="mt-5 mb-5 text-center">
+            <div class="mt-5 text-center">
                 <h1>Température Hohohot en temps réel !</h1>
                 <p id="informationTemperature">L'affichage en temps réel des températures Hohohot peut prendre une petite minute merci de patienter !</p>
             </div>
