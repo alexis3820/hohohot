@@ -1,6 +1,6 @@
 <?php include(ROOT.'/Views/main/header.php'); ?>
-<div class="row justify-content-center">
-    <div class="col-8 text-center mt-5 mb-5">
+<div class="row justify-content-center mb-5">
+    <div class="col-8 text-center mt-5">
         <h1>Bienvenu sur Hohohot !</h1>
         <div class="">
             <canvas id="graph"></canvas>
