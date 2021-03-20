@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/document/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/document/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -97,7 +98,7 @@
       <workItem from="1615715446685" duration="37506000" />
       <workItem from="1615976275719" duration="10818000" />
       <workItem from="1616097489434" duration="3836000" />
-      <workItem from="1616184117540" duration="12299000" />
+      <workItem from="1616184117540" duration="17170000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1610010410419</created>

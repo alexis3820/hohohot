@@ -6,9 +6,26 @@ body{
     position: relative !important;
 }
 
-header{
+nav{
     background: #ffffe3 !important;
     box-shadow: 0 0 1em #fcfbd4;
+}
+
+.nav-link {
+    padding-right: 20px!important;
+}
+
+nav a:hover {
+    color: #4a9be0!important;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    background-color: #a7cee8!important;
+}
+
+.navbar-toggle:hover {
+    background-color: #4a9be0!important;
 }
 
 footer {
