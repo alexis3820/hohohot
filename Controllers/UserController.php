@@ -16,7 +16,11 @@ class UserController extends Controller
                 $user = new User();
                 $createUser = $user->createUser($_POST['first_name'], $_POST['last_name'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['email']);
                 if($createUser){
-                    header('Location: /user/login/status');
+                    // Warning: Cannot modify header information - headers already sent by (output started at ....)
+                    // du html ou du php est affiché avant ?????
+                    // pas propre mais à defaut de comprendre comment fonctionne les headers Location, cela fera l'affaire
+                    echo '<script>document.location.replace("/user/login/status");</script>';
+                    exit;
                 }else{
                     echo 'Cette adresse mail est déjà utilisé, choisissez en une autre !';
                 }
@@ -52,7 +56,10 @@ class UserController extends Controller
                     } else {
                         $user->resetConnectionFailed($_POST['email']);
                         $_SESSION['id'] = $_POST['email'];
-                        header('Location: /');
+                        // Warning: Cannot modify header information - headers already sent by (output started at ....)
+                        // du html ou du php est affiché avant ?????
+                        // pas propre mais à defaut de comprendre comment fonctionne les headers Location, cela fera l'affaire
+                        echo '<script>document.location.replace("/");</script>';
                         exit;
                     }
                 }else{
