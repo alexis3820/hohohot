@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a109f0c-9fa8-43ac-953b-1de8e1d471a5" name="Default Changelist" comment="correction commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/main/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/main/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/js-cache-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -49,18 +49,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\icons" />
+      <recent name="C:\Serveurs\wamp64\www\hohohot\public\static" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\Views\document" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\Core" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\Views" />
-      <recent name="C:\Serveurs\wamp64\www\MyRealMVC\Models" />
-      <recent name="C:\Serveurs\wamp64\www\MyRealMVC\Views\capteur" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Serveurs\wamp64\www\hohohot\Views\capteur" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\js" />
-      <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\documentation" />
-      <recent name="C:\Serveurs\wamp64\www\hohohot\Controllers" />
+      <recent name="C:\Serveurs\wamp64\www\hohohot" />
       <recent name="C:\Serveurs\wamp64\www\hohohot\public" />
+      <recent name="C:\Serveurs\wamp64\www\hohohot\Views\capteur" />
+      <recent name="C:\Serveurs\wamp64\www\hohohot\public\static\documentation" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -97,7 +97,8 @@
       <workItem from="1615715446685" duration="37506000" />
       <workItem from="1615976275719" duration="10818000" />
       <workItem from="1616097489434" duration="3836000" />
-      <workItem from="1616184117540" duration="18287000" />
+      <workItem from="1616184117540" duration="18479000" />
+      <workItem from="1616340327992" duration="6498000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1610010410419</created>
